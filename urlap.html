@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gergye Martin">
+    <meta name="copyright" content="Az oldal oktatási célokra jött létre">
+    <meta name="description" content="Az oldal regisztráció céljából jött létre, hogy statisztikailag is lássuk, mely rétegek olvasnák leginkább folyóiratunkat, ha indulna.">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="jquery-album/jquery-3.7.1.min.js"></script>
+    <script src="jquery-validation-1.19.5/dist/jquery.validate.min.js"></script>
+    <script>
+    $(document).ready(function(){
+    $("#urlap").validate({
+        rules: {
+            vezeteknev: {
+                required: true
+            },
+            keresztnev: {
+                required: true
+            },
+            email: {
+                required: true,
+                email: true
+            },
+            telefon: {
+                required: true,
+                number: true
+            },
+            szuletes_datum: {
+                required: true
+            },
+            szam: {
+                required: true,
+            },
+            jelszo: {
+                required: true,
+                minlength: 8
+            },
+        },
+        messages: {
+            vezeteknev: "Írd be a vezetékneved!",
+            keresztnev: "Írd be a keresztneved!",
+            email: {
+                required: "Kérlek valós email címet adj meg!",
+                email: "Kérlek valós email címet adj meg!"
+            },
+            telefon: {
+                required: "Add meg a telefonszámod!",
+                number: "Csak számokat adhatsz meg!"
+            },
+            szuletes_datum: "Add meg a születési dátumod!",
+            szam: "Add meg, hány alkalommal vásárolnál évenként folyóiratot!",
+            jelszo:{
+                required: "Add meg a jelszavad!",
+                minlength: "A jelszónak legalább 8 karakternek kell lenni"
+            },
+        },
+    });
+});
+        </script>
+    <title>Igényfelmérés</title>
+    <link rel="icon" type="image/x-icon" href="./img/magnifier.png">
+</head>
+<body>    <a href="index.html" id ="cimlink">
+    <header>
+        <h1>A TÖRTÉNELEM NAGYJAI</h1>
+    </header></a>
+    <nav>
+        <ul>
+            <li><a href="okor.html" id = "okor">ÓKOR</a></li>
+            <li><a href="kozepkor.html" id = "kozepkor">KÖZÉPKOR</a></li>
+            <li><a href="ujkor.html" id ="ujkor">ÚJKOR</a></li>
+            <li><a href="jelenkor.html" id = "jelenkor">JELENKOR</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div>
+            <article>
+                <h2 class="fooldal_cim">Igényfelmérés</h2>
+                <p>
+                    Szeretnéd, hogy indítsunk folyóiratot? Ha igen, regisztrálj oldalunkra, mely arra szolgál, hogy megnézzük, hol és melyik korcsoportokban lenne rá a legnagyobb igény! Az ezzel kapcsolatos újdonságokról és információkról emailben vagy levélben, esetleg SMS-ben értesítünk.
+                </p>
+                <form id = "urlap" action="http://szamtud.uni-corvinus.hu/receive.php" method="post" novalidate>
+                    <label for="vezeteknev">Vezetéknév:</label>
+                    <input type="text" name="vezeteknev" id ="vezeteknev">
+                    <label for="keresztnev">Keresztnév:</label>
+                    <input type="text" name="keresztnev" id ="keresztnev">
+                    <label for="email">E-mail cím:</label>
+                    <input type="email" name="email" id="email" placeholder="example@gmail.com">
+                    <label for="jelszo">Jelszó:</label>
+                    <input type="password" name="jelszo" id="jelszo">
+                    <label for="telefon">Telefonszám:</label>
+                    <input type="tel" name="telefon" id="telefon">
+                    <p id ="nemekParagraf">Nemed:</p>
+                    <div class="nemek">
+                    <label for="nemedF" id="NemFerfiLabel">Férfi:<input type="radio" name="nemed" id="nemedF"></label>
+                    <label for="nemedN" id ="NemNoLabel">Nő: <input type="radio" name="nemed" id="nemedN"></label>
+                    </div>
+                <div class="korszakokCB">
+                    <label for="szuletes_datum">Születési dátum:</label>
+                    <input type="date" name="szuletes_datum" id ="szuletes_datum">
+                    <label>Érdekelt korszakok:</label>
+                    <ul id ="korszakokLista">
+                    <li><label for="okorCB">Ókor:</label> <input type="checkbox" name="okorCB" id="okorCB"></li>
+                    <li><label for="kozepkorCB">Középkor:</label> <input type="checkbox" name="kozepkorCB" id="kozepkorCB"></li>
+                    <li><label for="ujkorCB">Újkor:</label> <input type="checkbox" name="ujkorCB" id="ujkorCB"></li>
+                    <li><label for="jelenkorCB">Jelenkor:</label> <input type="checkbox" name="jelenkorCB" id="jelenkorCB"></li>
+                    </ul>
+                </div>
+                    <label for="szam">Körülbelül hányszor vásárolnál folyóiratot évenete?</label>
+                    <input type="number" min="1" max="12" step="1" id ="szam" value="1">
+                    <label for="eszrevetelek">Egyéb észrevételek, ajánlások:</label>
+                    <textarea name="eszrevetelek" id="eszrevetelek" rows="10" cols="70"></textarea>
+                    <div class="kuldes">
+                    <input type="reset" name="reset" value="Törlés" id="reset">
+                    <input type="submit" name="submit" value="Küldés" id ="submit">
+                </div>
+                </form>
+            </article>
+        </div>
+    </main>
+    <footer>
+        <hr>
+        <p>Az oldal nem valós vállalat készítménye, csupán a fantázia műve | Készítette: Gergye Martin, 2023</p>
+    </footer>
+</body>
+</html>

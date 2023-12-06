@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gergye Martin">
+    <meta name="copyright" content="Az oldal oktatási célokra jött létre">
+    <meta name="description" content="Az oldal célja, hogy a felhasználók megnézhessék, mennyit tudnak a történelemről valójában egy kvízjáték segítségével.">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="./js/script.js"></script>
+    <title>Történelmi kvízjáték</title>
+    <link rel="icon" type="image/x-icon" href="./img/test.png">
+</head>
+<body onload="lathatosag()">
+    <a href="index.html" id ="cimlink">
+    <header>
+        <h1>A TÖRTÉNELEM NAGYJAI</h1>
+    </header>
+    </a>
+    <nav>
+        <ul>
+            <li><a href="okor.html" id="okor">ÓKOR</a></li>
+            <li><a href="kozepkor.html" id = "kozepkor">KÖZÉPKOR</a></li>
+            <li><a href="ujkor.html" id ="ujkor">ÚJKOR</a></li>
+            <li><a href="jelenkor.html" id = "jelenkor">JELENKOR</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div>
+            <article>
+                <h2 class="fooldal_cim">Történelmi kvízjáték</h2>
+                <p>
+                    Az alábbbi kvízjáték teszteli tudásodat történelemből. Amennyiben a kérdések 70%-ára helyesen válaszolsz, átlagon felüli történelmi tudással rendelkezel. A teszt egy feleletválasztós és egy szövegkiegészítős részből fog állni. Utóbbiban neked van lehetőséged arra, hogy kiválaszd, melyik történelmi személlyel kapcsolatban szeretnéd megmérettetni tudásod!
+                </p>
+                <ul>
+                    <li>Feleletválasztós rész: 20pont</li>
+                    <li>Szövegkiegészítős rész (választható személy): 5pont</li>
+                </ul>
+                <form id="kvizjatek">
+                    <h2>Ókor</h2>
+                    <fieldset>
+                        <legend>1. Ki volt Nagy Sándor mestere, aki etikai és politikai képzést nyújtott neki?</legend>
+                        <label>
+                            Arisztotelész
+                            <input type="radio" name="kerdes1" value="a">
+                        </label>
+                        <label>
+                            Platón
+                            <input type="radio" name="kerdes1" value="b">
+                        </label>
+                        <label>
+                            Szókratész
+                            <input type="radio" name="kerdes1" value="c">
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>2. Melyik évben kezdte el Nagy Sándor hódító hadjáratát a Perzsa Birodalom ellen?</legend>
+                        <label>
+                            Kr. e. 350
+                            <input type="radio" name="kerdes2" value="a">
+                        </label>
+                        <label>
+                            Kr. e. 334
+                            <input type="radio" name="kerdes2" value="b">
+                        </label>
+                        <label>
+                            Kr. e. 333
+                            <input type="radio" name="kerdes2" value="c">
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>3. Ki volt Julius Caesar társa az első triumvirátusban?</legend>
+                        <label>
+                            Octavianus
+                            <input type="radio" name="kerdes3" value="a">
+                        </label>
+                        <label>
+                            Pompeius
+                            <input type="radio" name="kerdes3" value="b">
+                        </label>
+                        <label>
+                            Ciceró
+                            <input type="radio" name="kerdes3" value="c">
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>4. Milyen reformokat hajtott végre Julius Caesar Római Birodalomban?</legend>
+                        <label>
+                            Naptárreform
+                            <input type="radio" name="kerdes4" value="a">
+                        </label>
+                        <label>
+                            Agrárreform
+                            <input type="radio" name="kerdes4" value="b">
+                        </label>
+                        <label>
+                            Hadügyi reform
+                            <input type="radio" name="kerdes4" value="c">
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>5. Mikor és hogyan halt meg Jézus Krisztus?</legend>
+                        <label>
+                            Felakasztották, Kr. u. 36-ban
+                            <input type="radio" name="kerdes5" value="a">
+                        </label>
+                        <label>
+                            Kövekkel megkövezve, Kr. u. 30-ban
+                            <input type="radio" name="kerdes5" value="b">
+                        </label>
+                        <label>
+                            Keresztre feszítve, Kr. u. 33-ban
+                            <input type="radio" name="kerdes5" value="c">
+                        </label>
+                    </fieldset>
+                    <h2>Középkor</h2>
+                    <fieldset>
+                        <legend>1. Ki volt Nagy Károly legfőbb ellenfele, akivel a 732-es poitiers-i csatában szembekerült?</legend>
+                        <label>
+                            Avarok
+                            <input type="radio" name="kerdes6" value="a">
+                        </label>
+                        <label>
+                            Longobárdok
+                            <input type="radio" name="kerdes6" value="b">
+                        </label>
+                        <label>
+                            Arabok
+                            <input type="radio" name="kerdes6" value="c">
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>2. Melyik évben választották Nagy Károlyt császárrá a pápa által?</legend>
+                        <label>
+                            732
+                            <input type="radio" name="kerdes7" value="a">
+                        </label>
+                        <label>
+                            800
+                            <input type="radio" name="kerdes7" value="b">
+                        </label>
+                        <label>
+                            843
+                            <input type="radio" name="kerdes7" value="c">
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>3. Melyik évben hirdette Dzsingisz kán bosszúhadjáratát a Közép-Ázsiát uraló sah ellen, miután egy mongol karavánt lemészároltak?</legend>
+                        <label>
+                            1206
+                            <input type="radio" name="kerdes8" value="a">
+                        </label>
+                        <label>
+                            1218
+                            <input type="radio" name="kerdes8" value="b">
+                        </label>
+                        <label>
+                            1213
+                            <input type="radio" name="kerdes8" value="c">
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>4. Melyik város ellen indult Dzsingisz kán utolsó nyugati hadjárata 1223-ban, ahol a mongolok a Kalka-folyó mellett megsemmisítették az orosz és kun fejedelmek seregeit?</legend>
+                        <label>
+                            Moszkva
+                            <input type="radio" name="kerdes9" value="a">
+                        </label>
+                        <label>
+                            Bagdad
+                            <input type="radio" name="kerdes9" value="b">
+                        </label>
+                        <label>
+                            Karakorum
+                            <input type="radio" name="kerdes9" value="c">
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>5. Melyik várost tervezte szárazra szivattyúzni és milyen vízrendszert fejlesztett ki Leonardo da Vinci a 1500-as évek elején?</legend>
+                        <label>
+                            Firenze, csatornarendszer
+                            <input type="radio" name="kerdes10" value="a">
+                        </label>
+                        <label>
+                            Milánó, öntözőrendszer
+                            <input type="radio" name="kerdes10" value="b">
+                        </label>
+                        <label>
+                            Róma, vízvezetékrendszer
+                            <input type="radio" name="kerdes10" value="c">
+                        </label>
+                    </fieldset>
+                    <h2>Újkor</h2>
+                    <fieldset>
+                        <legend>1. Kolumbusz Kristóf mely országok uralkodóit kereste meg tervével az Újvilág felfedezésére, miután Portugáliában nem talált támogatást?</legend>
+                        <label>
+                            Olaszország
+                            <input type="radio" name="kerdes11" value="a">
+                        </label>
+                        <label>
+                            Spanyolország
+                            <input type="radio" name="kerdes11" value="b">
+                        </label>
+                        <label>
+                            Portugália
+                            <input type="radio" name="kerdes11" value="c">
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>2. Hány hajóval indult el Kolumbusz Kristóf 1492. augusztus 3-án az Újvilág felfedezésére?</legend>
+                        <label>
+                            3 hajóval
+                            <input type="radio" name="kerdes12" value="a">
+                        </label>
+                        <label>
+                            2 hajóval
+                            <input type="radio" name="kerdes12" value="b">
+                        </label>
+                        <label>
+                            4 hajóval
+                            <input type="radio" name="kerdes12" value="c">
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>3. Melyik esemény váltotta ki XVI. Lajos király Párizsból való szökését a Bastille elfoglalását követően?</legend>
+                        <label>
+                            A Granada elleni háború
+                            <input type="radio" name="kerdes13" value="a">
+                        </label>
+                        <label>
+                            Az angol-francia háború
+                            <input type="radio" name="kerdes13" value="b">
+                        </label>
+                        <label>
+                            Az új alkotmány elfogadása
+                            <input type="radio" name="kerdes13" value="c">
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>4. Mely tengeri csata során szenvedett vereséget a francia flotta Nelson angol admirális ellen?</legend>
+                        <label>
+                            Trafalgar
+                            <input type="radio" name="kerdes14" value="a">
+                        </label>
+                        <label>
+                            Austerlitz
+                            <input type="radio" name="kerdes14" value="b">
+                        </label>
+                        <label>
+                            Jéna
+                            <input type="radio" name="kerdes14" value="c">
+                        </label>
+                    </fieldset>                        
+                    <fieldset>
+                        <legend>5. Miért vált végzetes hibának Napóleon 1812-es Oroszország elleni hadjárata?</legend>
+                        <label>
+                            A spanyol forradalmak miatt
+                            <input type="radio" name="kerdes15" value="a">
+                        </label>
+                        <label>
+                            A kontinentális zárlat megszegése
+                            <input type="radio" name="kerdes15" value="b">
+                        </label>
+                        <label>
+                            Az orosz tél és a "felégetett föld" taktika következtében
+                            <input type="radio" name="kerdes15" value="c">
+                        </label>
+                    </fieldset>
+                    <h2>Jelenkor</h2>
+                    <fieldset>
+                        <legend>1. Winston Churchill melyik évben lett Nagy-Britannia miniszterelnöke?</legend>
+                        <label>
+                            1910
+                            <input type="radio" name="kerdes16" value="a">
+                        </label>
+                        <label>
+                            1939
+                            <input type="radio" name="kerdes16" value="b">
+                        </label>
+                        <label>
+                            1940
+                            <input type="radio" name="kerdes16" value="c">
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>2. Franklin D. Roosevelt mely intézkedése segítette az Egyesült Államokat a világgazdasági válság kezelésében?</legend>
+                        <label>
+                            Marshall-terv
+                            <input type="radio" name="kerdes17" value="a">
+                        </label>
+                        <label>
+                            New Deal program
+                            <input type="radio" name="kerdes17" value="b">
+                        </label>
+                        <label>
+                            NATO-tagság
+                            <input type="radio" name="kerdes17" value="c">
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>3. Milyen katonai konfliktus során szolgált John F. Kennedy a haditengerészetnél?</legend>
+                        <label>
+                            I. világháború
+                            <input type="radio" name="kerdes18" value="a">
+                        </label>
+                        <label>
+                            II. világháború
+                            <input type="radio" name="kerdes18" value="b">
+                        </label>
+                        <label>
+                            Hidegháború
+                            <input type="radio" name="kerdes18" value="c">
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>4. Milyen okból és milyen esemény hatására változtatta meg Franklin D. Roosevelt az Egyesült Államok szerepét a második világháborúban?</legend>
+                        <label>
+                            Pearl Harbor támadása után, az USA beleegyezett a tengelyhatalmak elleni hadviselésbe
+                            <input type="radio" name="kerdes19" value="a">
+                        </label>
+                        <label>
+                            Németország megtámadta az USA-t
+                            <input type="radio" name="kerdes19" value="b">
+                        </label>
+                        <label>
+                            Az USA csatlakozott a tengelyhatalmakhoz a háború kezdetén
+                            <input type="radio" name="kerdes19" value="c">
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>5. Mit jelentett a "cash and carry" elv az Egyesült Államok számára a második világháború előtt?</legend>
+                        <label>
+                            Az Egyesült Államok készpénz nélkül adott kölcsönösen fegyvereket az egyes országoknak
+                            <input type="radio" name="kerdes20" value="a">
+                        </label>
+                        <label>
+                            Az Egyesült Államok csak készpénzért értékesített fegyvereket más országoknak.
+                            <input type="radio" name="kerdes20" value="b">
+                        </label>
+                        <label>
+                            Az Egyesült Államok csak készpénzért vásárolhatott fegyvereket más országoktól.
+                            <input type="radio" name="kerdes20" value="c">
+                        </label>
+                    </fieldset>
+                    <h2>Szövegkiegészítés</h2>
+                    <div class="valasztasok">
+                        <ul id = "valasztasiLehetoseg">
+                            <li id ="julius_caesar" onclick="CaesarFv()">Julius Caesar</li>
+                            <li id ="bonaparte_napoleon" onclick="NapoleonFv()">Bonaparte Napóleon</li>
+                            <li id ="john_kennedy" onclick="KennedyFv()">John F. Kennedy</li>
+                        </ul>
+                    </div>
+                    <div id="szovegtesztCaesar">
+                    <p>
+                        Julius Caesar a római köztársaság egyik legkiemelkedőbb és legbefolyásosabb személyisége volt a <select name="caesar1" id="dobozka1"><option value="-" selected>-</option> <option value="Kre1" class="szovegkozi">Kr. e. 1.</option> <option value="Kre2" class="szovegkozi">Kr. e. 2.</option><option value="Kre3">Kr. e. 3.</option></select> század közepén. 
+                        Politikai és katonai karrierjével, valamint reformjaival olyan mértékben hozzájárult a Római Birodalom történetéhez, 
+                        hogy nevéhez számos kiemelkedő esemény és döntés fűződik.
+                    </p>
+                    <p>
+                        A karrierje során Caesar számos fontos tisztséget töltött be, beleértve a consulátust és a proconsul (kormányzó) címet. 
+                        Azonban a politikai ellenfeleivel folytatott küzdelmeiben gyakran ütközött, és a siker elérése érdekében különböző 
+                        szövetségeket kötött. Az első triumvirátusban való részvétele során együttműködött <select name="caesar2" id="dobozka2"><option value="-" selected>-</option><option value="pompeius1" id="pompeius1">Pompeius</option><option value="octavianus1" id="octavianus1">Octavianus</option><option value="cicero1" id="cicero1">Cicero</option></select>-szal és <select name="caesar3" id="dobozka3"><option value="-" selected>-</option><option value="pompeius2" id="pompeius2">Leandrosz</option><option value="octavianus2" id="octavianus2">Philipposz</option><option value="cicero2" id="cicero2">Crassus</option></select>-szal.
+                    </p>
+                    <p>
+                        Caesar híres hadjáratokat vezetett <select name="caesar4" id="dobozka4"><option value="-" selected>-</option> <option value="Afrika" class="szovegkozi">Afrikában</option><option value="Gallia" class="szovegkozi">Galliában</option><option value="Syria" class="szovegkozi">Syriában</option></select>, amelyek során jelentős területeket hódított meg a római birodalom számára. 
+                        Azonban Rómába való visszatérése után a politikai helyzet megromlott, és Caesar konfliktusba került a szenátussal. 
+                        A <select name="caesar5" id="dobozka5"><option value="-" selected>-</option> <option value="Rubicon" class="szovegkozi">Rubicon</option><option value="Po" class="szovegkozi">Pó</option><option value="Tiberis" class="szovegkozi">Tiberis</option></select>, folyó átkelése után, Kr. e. 49-ben kezdetét vette a polgárháború, amelyben Caesar győztesen került ki.                
+                    </p>
+                    </div>
+                    <div id="szovegtesztNap">
+                        <p>
+                            Napóleon Bonaparte, a 18. század vége és a 19. század eleje egyik legkivételes és meghatározó európai hadvezére és politikusa volt. Franciaországból származva, Napóleon gyorsan emelkedett a ranglétrán, és <select name="napoleon1" id="dobozka6"><option value="-" selected>-</option><option value="1799" class="szovegkozi">1799</option><option value="1809" class="szovegkozi">1809</option><option value="1794" class="szovegkozi">1794</option></select>-ben egy hatalmas politikai fordulat során magához ragadta a hatalmat, kikiáltva magát első konzulnak. Képességei és hadvezéri zsenialitása révén hamarosan császárrá koronázták.
+                        </p>
+                        <p>
+                            A Napóleon által vezetett francia hadsereg számos jelentős győzelmet ért el az európai csatatereken, köztük <select name="napoleon2" id="dobozka7"><option value="-" selected>-</option><option value="Bécs" class="szovegkozi">Bécs</option><option value="Austerlitz" class="szovegkozi">Austerlitz</option><option value="Bern" class="szovegkozi">Bern</option></select> és <select name="napoleon3" id="dobozka8"> <option value="-" selected>-</option><option value="Brüsszel" class="szovegkozi">Brüsszel</option><option value="Amszterdam" class="szovegkozi">Amszterdam</option><option value="Jéna" class="szovegkozi">Jéna</option></select>, amelyek hozzájárultak az általa irányított francia birodalom kiterjesztéséhez. Azonban a 1812-es <select name="napoleon4" id="dobozka9"><option value="-" selected>-</option> <option value="osztrák" class="szovegkozi">osztrák</option><option value="törökországi" class="szovegkozi">törökországi</option><option value="oroszországi" class="szovegkozi">oroszországi</option></select> hadjárat és a következő évek vereségei során Napóleon birodalmi ambíciói kezdtek meginogni. 1814-ben lemondott a trónról és száműzetésbe vonult Elba szigetére, csak hogy egy évvel később visszatérjen és ismét hadba szálljon. Végül 1815-ben a waterlooi csatában szenvedett vereséget, és véglegesen száműzték <select name="napoleon5" id="dobozka10"><option value="-" selected>-</option> <option value="Elba" class="szovegkozi">Elba</option><option value="Szent_Ilona" class="szovegkozi">Szent Ilona</option><option value="Madagaszkár" class="szovegkozi">Madagaszkár</option></select> szigetére, ahol 1821-ben elhunyt.
+                        </p>
+                        <p>
+                            Napóleon Bonaparte öröksége azonban tovább él a történelemben. Hadvezéri taktikái és jogi reformjai még ma is tanulmányozottak, és az általa létrehozott Code Napoléon (Napóleon Kódex) jelentős hatással volt a jogrendszer fejlődésére szerte a világon.
+                        </p>
+                    </div>
+                    <div id="szovegtesztKennedy">
+                        <p>
+                            John F. Kennedy, az Amerikai Egyesült Államok <select name="kennedy1" id="dobozka11"> <option value="-" selected>-</option><option value="harmincnegy" class="szovegkozi">34.</option><option value="harmincot" class="szovegkozi">35.</option><option value="harminchat" class="szovegkozi">36.</option></select> elnöke, az 1960-as évek egyik ikonikus politikusa volt. Fiatal kora ellenére, 1961 és 1963 közötti elnöksége alatt komolyan befolyásolta az amerikai történelmet. Kennedy kiváló beszédei, például az "Ich bin ein Berliner" és az "Ask not what your country can do for you" (Ne azt kérdezd, mit tehet az ország érted, hanem te mit tehetsz az országért) kiemelkedő példái voltak annak, ahogyan a karizmatikus vezető tud inspirálni és egyesíteni az embereket.
+                        </p>
+                        <p>
+                            Az elnöki hivatalában Kennedy olyan kihívásokkal nézett szembe, mint a hidegháborús feszültség és a <select name="kennedy2" id="dobozka12"> <option value="-" selected>-</option><option value="Török" class="szovegkozi">Török</option><option value="Kubai" class="szovegkozi">Kubai</option><option value="Mexikói" class="szovegkozi">Mexikói</option></select> Rakétaválság. Azonban az ismertetett mértéktartása és hidegháborús politikája révén sikerült elkerülnie egy globális konfliktust a <select name="kennedy3" id="dobozka13"> <option value="-" selected>-</option><option value="Szovjetunió" class="szovegkozi">Szovjetunióval</option><option value="kinai_dinasztia" class="szovegkozi">Kínai Dinasztiával</option><option value="brit_bir" class="szovegkozi">Brit Birodalommal</option></select>. Kennedy emellett a polgárjogi mozgalom támogatója is volt, és elkötelezte magát az egyenlőség és a társadalmi igazságosság iránt.
+                        </p>
+                        <p>
+                            Sajnálatos módon, JFK elnöksége tragikus módon ért véget, amikor <select name="kennedy4" id="dobozka14"> <option value="-" selected>-</option><option value="1965" class="szovegkozi">1965</option><option value="1964" class="szovegkozi">1964</option><option value="1963" class="szovegkozi">1963</option></select> novemberében <select name="kennedy5" id="dobozka15"> <option value="-" selected>-</option><option value="Houstonban" class="szovegkozi">Houstonban</option><option value="Dallasban" class="szovegkozi">Dallasban</option><option value="Austinban" class="szovegkozi">Austinban</option></select> merénylet áldozata lett. Kennedy öröksége azonban tovább él az amerikai politikában és kultúrában, mint egy olyan elnöké, aki új irányt szabott az ország számára és aki szimbolizálta az optimizmust és az elkötelezettséget a közös ügyek iránt.
+                        </p>
+                    </div>
+                    <button type="button" onclick="ellenorzes()" id ="button">Ellenőrzés</button>
+                    <p id="eredmeny"></p>
+                </form>
+            </article>
+        </div>
+    </main>
+    <footer>
+        <hr>
+        <p>Az oldal nem valós vállalat készítménye, csupán a fantázia műve | Készítette: Gergye Martin, 2023</p>
+    </footer>
+</body>
+</html>

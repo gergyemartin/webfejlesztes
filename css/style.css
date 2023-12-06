@@ -1,0 +1,629 @@
+/*Betűtípus beimportálása*/
+@import url('https://fonts.googleapis.com/css2?family=BioRhyme&family=Freckle+Face&family=GFS+Didot&family=Roboto+Slab&family=Roboto:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+
+/*A görgetés smooth legyen, ne ugorjon*/
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*Az oldalak színe, betűtípusa, marginja*/
+
+body{
+    background-color: rgb(174, 227, 227);
+    font-family: "BioRhyme";
+    margin: 0px;
+}
+*{
+    box-sizing: border-box;
+}
+#okorBody{
+    background-color: antiquewhite;
+}
+#kozepkorBody{
+    background-color: #e5d8c8;
+}
+#ujkorBody{
+    background-color: #e1e794;
+}
+#jelenkorBody{
+    background-color: #cbcb81;
+}
+
+/*A navbar színe*/
+
+#okor{
+    background-color: antiquewhite;
+}
+#kozepkor{
+    background-color: #e5d8c8;
+}
+#ujkor{
+    background-color: #e1e794;
+}
+#jelenkor{
+    background-color: #cbcb81;
+}
+
+/*Navbar beállításai: flexként jelenítse meg, ugyanannyi hely az elemeknek, sorban legyenek*/
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+/*A nav lista beállításai: ugyanannyira legyenek az elemek, flex display, ne legyen felsoroláselem/szimbólum*/
+/*A lista középre legyen igazítva, betűtípusa, ne legyen text-decoration, ha fölé viszem az egeret, szín, magasság, stb...*/
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    flex-grow: 1;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+}
+nav li{
+    width: 100%;
+    height: 70px;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+    font-family: "MedievalSharp";
+}
+nav a:hover{ /*A navbar egérmutató ráhúzására történő stílusváltozása*/
+    color: black;
+    transition: 0.8s color ease;
+}
+
+/*A main szélessége, margin, padding, flex tlajdonságai*/
+
+main{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+}
+.fooldal_cim{
+    text-align: center;/*A főoldali címek középre igazítása*/
+}
+p{
+    text-align: justify; /*sorkizárás*/
+}
+
+/*A header: kép, margin, magasság, ne legyen ismételve, a háttér úgy tölti ki a rendelkezésére álló teret, hogy nem torzul*/
+
+header{
+    background-image: url("../img/headerkep.png");
+    margin: 0;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    display: flex;
+}
+
+/*H1 címsorok beállításai*/
+
+h1{
+    margin: 0;
+    color: white;
+    font-size: 100px;
+    font-family: "MedievalSharp";
+    text-align: center;
+    align-self: center;
+    text-shadow: 5px 5px 5px black; /*vízszintes, függőleges, homályosság, szín*/
+}
+
+
+footer p{
+    text-align: center; /*A lábléc középre igazítása*/
+}
+hr{
+    width: 95%; /*A vonal szélessége*/
+}
+#cimlink{
+    text-decoration: none; /**/
+}
+#szekcio{
+    width: 65%; /*A főoldalon kívüli section szélessége, az aside elem miatt*/
+}
+
+/*Aside tulajdonságok*/
+
+aside{
+    padding: 10px;
+    border: 5px solid rgb(49, 176, 176);
+    border-radius: 25px;
+    margin: 0;
+    box-sizing: border-box;
+    height: fit-content;
+    box-shadow: 5px 5px 5px gray;
+    width: 35%;
+}
+article{
+    padding: 10px; /*Article paddingje*/
+}
+aside h2{
+    text-align: center; /*Aside h2 címek*/
+}
+
+/*Főoldali kép Ciceroról*/
+
+#cicerokep{
+    border: 5px solid white;
+    border-radius: 30px;
+    box-shadow: 5px 5px 5px gray;
+    width: 250px;
+    margin-left: 20px
+}
+
+/*Cicero és idézet container-e, középre igazítás függőlegesen, vízszintesen*/
+
+.container1{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+#idezet{ /*Az idézet tulajdonságai*/
+    color:gray;
+    font-style: italic;
+}
+
+
+#amcsi{ /*Az amerikai polgárháború képe*/
+    width: 350px;
+    border: 5px solid white;
+    border-radius: 30px;
+    box-shadow: 5px 5px 5px gray;
+    float: right;
+    margin-left: 20px;
+}
+
+
+.kepdoboz_bal{ /*A balra igazított képek és leírások beállításai: column (egymás alatt), balra igazítás ("lebegtetés")*/
+    display: flex;
+    flex-direction: column;
+    float: left;
+    margin-right: 15px;
+    width: 300px;
+}
+.kepdoboz_jobb{ /*A jobbra igazított képek és leírások beállításai: column (egymás alatt), jobbra igazítás ("lebegtetés")*/
+    display: flex;
+    flex-direction: column;
+    float: right;
+    margin-left: 15px;
+    width: 300px;
+}
+
+/*A bal és jobboldali képdobozokban lévő képek tulajdonságai*/
+
+.jobboldalikep{
+    width: 100%;
+    border: 5px solid black;
+    box-shadow: 5px 5px 5px gray;
+    float: right;
+}
+.baloldalikep{
+    width: 100%;
+    border: 5px solid black;
+    box-shadow: 5px 5px 5px gray;
+    float: left;
+    margin-right: 20px;
+    height: auto;
+}
+.kepfelirat{ /*A képek alatti leírások stílusa*/
+    bottom: 0;
+    left: 0;
+    width: 100%;   
+    background-color: gray;
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+#keresztenyseg{ /*felsoroláselem stílusa (szimbólum)*/
+    list-style-image: url("../img/cross.png");
+}
+
+/*Kérdőív link tulajdonságai*/
+
+#kerdoivlink{ /*Kérdőív linkje középre igazítva*/
+    text-align: center;
+}
+.kerdoivlinkA:hover{ /*Ha a kurzort rávisszük: hossz, színváltás, fokozatos*/
+    color: gray;
+    transition: 0.5s color ease;
+}
+.kerdoivlinkA{ /*narancssárga*/
+    color: orange;
+}
+.kerdoivlinkA:visited:hover{ /*Ha rávisszük a látogatottra ugyanazok a tulajdonságok*/
+    color: gray;
+    transition: 0.5s color ease;
+}
+
+/*Kvízlink stílusa*/
+
+#jslink{
+    color: orange;
+}
+#jslink:visited:hover{
+    color: gray;
+    transition: 0.5s color ease;
+}
+#jslink:hover{
+    color: gray;
+    transition: 0.5s color ease;
+}
+
+/*Tetejére ugrás tulajdonságai*/
+
+#ugras{
+    text-align: center;
+}
+#ugraslink{
+    text-decoration: none;
+    color: orange;
+    font-family: "MedievalSharp";
+    font-size: 20px;
+    font-weight: bold;
+}
+#ugraslink:hover{
+    color: gray;
+    transition: 0.5s color ease;
+}
+
+/*Az aside részben az oldal tartalma alatti rész tulajdonságai*/
+
+#oldaltartalma{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+}
+.oldal_Tartalma_div a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-family: "MedievalSharp";
+    font-weight: bold;
+}
+.oldal_Tartalma_div a:hover{
+    color: gray;
+    transition: 0.5s color ease;
+}
+#aside1cim{ /*Az aside-ban lévő főcím marginja*/
+    margin-bottom: 0;
+}
+
+/*Az űrlap és a label, input tulajdonságai*/
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid gray;
+    text-align: center;
+    border-radius: 15px;
+}
+form label{
+    margin-top: 20px;
+}
+#NemFerfiLabel{
+    display: flex;
+}
+#NemNoLabel{
+    display: flex;
+}
+form input{
+    width: 50%;
+}
+.nemek{ /*A nemek opció stílusa*/
+    display: flex;
+}
+#nemekParagraf{
+    margin-top: 16px;
+    margin-bottom: 0;
+}
+/*A checkboxok és a korszakok listájának stílusa*/
+.korszakokCB{ 
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.korszakokCB input{
+    margin: 0;
+    width: auto;
+}
+.korszakokCB label{
+    margin-top: 20px;
+}
+#korszakokLista{
+    list-style-type: none;
+    padding: 0;
+}
+#eszrevetelek{ /*Észrevételek stílusa*/
+    margin-bottom: 20px;
+    resize: none;
+    width: 50%;
+}
+#szam{ /*input type number stílusa*/
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+label.error{ /*Űrlap validálás*/
+    color: #fb3a3a;
+}
+
+/*A kvízjáték stílusa*/
+
+#kvizjatek label{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: auto;
+    text-align: justify;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#kvizjatek input{
+    width: auto;
+    margin-left: 15px;
+}
+#kvizjatek legend{
+    font-weight: bold;
+}
+fieldset{
+    width: 100%;
+    border: 0;
+    margin-right: 10px;
+    margin-left: 10px
+}
+#szovegtesztCaesar, #szovegtesztNap, #szovegtesztKennedy{
+    margin: 10px;
+}
+/*Kvíz alján a 3 történelmi személy listája*/
+.valasztasok{
+    color: orange;
+    font-weight: bold;
+}
+#valasztasiLehetoseg{
+    list-style-type: none;
+    padding: 0;
+}
+#julius_caesar:hover, #bonaparte_napoleon:hover, #john_kennedy:hover{
+    cursor: pointer;
+    color: black;
+    transition: 0.8s color ease;
+}
+
+/*Gombok stílusa, egérmutató rávitele esetén is (kvízben és űrlapban ugyanolyan)*/
+
+#submit, #reset, #button{ 
+    width: 100px;
+    margin: 0;
+    border: 3px solid gray;
+    border-radius: 5px;
+    font-family: "BioRhyme";
+    font-weight: bold;
+    color: gray;
+    height: 50px;
+}
+#submit:hover, #reset:hover, #button:hover{
+    background-color: black;
+    color: white;
+    transition: 0.9s color ease;
+}
+#button{
+    margin-bottom: 20px;
+}
+.kuldes{ /*A 2 gomb divjének stílusa*/
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+/*Beviteli mezők stílusa (kvízben és űrlapban ugyanolyan)*/
+
+input[type="text"], input[type="tel"], input[type="email"], textarea, input[type="date"], input[type="number"], input[type="password"]{ /*A kiválasztott input typeok stílusa*/
+    border-radius: 5px;
+    border: 3px solid gray;
+}
+select{ /*lista*/
+    border-radius: 5px;
+    border: 3px solid gray;
+}
+
+/*A képgaléria tulajdonságai*/
+
+.kepek{
+    height: 90vh;
+    margin: auto;
+}
+#albumokfelett{ /*Galéria feletti címek*/
+    text-align: center;
+}
+
+/*A reszponzivitásért felelős kódok, melyeket nem részleteznék, hisz mindenhol már látott elemekre állítok be más tulajdonságokat*/
+
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 90%;
+    }
+    header {
+        text-align: center;
+    }
+    nav ul{
+        display: block;
+        text-align: center;
+    }
+    main {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+    aside {
+        flex-direction: column;
+        width: 100%;
+    }
+    footer {
+        text-align: center;
+    }
+    h1{
+        margin: 0;
+        color: white;
+        font-size: 10vw; 
+        font-family: "MedievalSharp";
+        text-align: center;
+        align-self: center;
+        text-shadow: 0.5vw 0.5vw 0.5vw black; 
+    }
+    .kepdoboz_bal, .kepdoboz_jobb{
+        width: 100%;
+    }
+    #cicerokep, #amcsi{
+        width: 100%;
+        margin-bottom: 1.5vw; 
+    }
+    .container1{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        border: 0.2vw solid gray; 
+        text-align: center;
+        border-radius: 1.5vw; 
+    }
+    #kvizjatek{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        border: 0.2vw solid gray; 
+        text-align: center;
+        border-radius: 1.5vw;
+    }
+    #submit, #reset, #button{
+        width: 40%;
+        margin: 0;
+        border: 0.2vw solid gray; 
+        border-radius: 0.5vw; 
+        font-family: "BioRhyme";
+        font-weight: bold;
+        color: gray;
+        height: 7vw; 
+    }
+    #button{
+        font-size: 0.5vw; 
+        margin-bottom: 1.5vw; 
+    }
+    #kvizjatek label{
+        margin-left: 0;
+    }
+    #kvizjatek input{
+        margin-right: 0;
+    }
+    #szekcio{
+        width: 100%;
+    }
+    #eszrevetelek{
+        width: 95%;
+    }
+    .kepek{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 90%;
+    }
+    header {
+        text-align: center;
+    }
+    nav ul{
+        display: block;
+        text-align: center;
+    }
+    main {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+    aside {
+        flex-direction: column;
+        width: 100%;
+    }
+    footer {
+        text-align: center;
+    }
+    h1{
+        margin: 0;
+        color: white;
+        font-size: 10vw; 
+        font-family: "MedievalSharp";
+        text-align: center;
+        align-self: center;
+        text-shadow: 0.5vw 0.5vw 0.5vw black;
+    }
+    .kepdoboz_bal, .kepdoboz_jobb{
+        width: 100%;
+    }
+    #cicerokep, #amcsi{
+        width: 100%;
+        margin-bottom: 1.5vw;
+    }
+    .container1{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        border: 0.2vw solid gray; 
+        text-align: center;
+        border-radius: 1.5vw; 
+    }
+}

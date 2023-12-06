@@ -7,7 +7,7 @@ Az oldal témája a történelem, azon belül is a történelmi korszakok leghí
 
 Emellett található az oldalon egy tudásfelmérő kvíz, valamint egy regisztrációs felület, ahol a felhasználók adataik megadásával segíthetnek hozzájárulni egy esetleges folyóirat indításához, célközönségi statisztikát kínálva.
 
-Java-script kód: 
+Java-script kód: https://gergyemartin.github.io/webfejlesztes/teszt.html
 
 Célja: Az illető történelem-tudásának felmérése egy kvízzel, a végén szövegkiegészítős feladattal.
 

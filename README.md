@@ -1,7 +1,7 @@
 # webfejlesztes
 Készítő: Gergye Martin
 
-Oldal címe: https://github.com/gergyemartin/webfejlesztes
+Oldal címe: https://gergyemartin.github.io/webfejlesztes/
 
 Az oldal témája a történelem, azon belül is a történelmi korszakok leghíresebb személyiségeinek bemutatása.
 

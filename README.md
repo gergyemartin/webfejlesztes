@@ -3,6 +3,8 @@ Készítő: Gergye Martin
 
 Oldal címe: https://gergyemartin.github.io/webfejlesztes/
 
+A repository oldal címe: https://github.com/gergyemartin/webfejlesztes
+
 Az oldal témája a történelem, azon belül is a történelmi korszakok leghíresebb személyiségeinek bemutatása. Mindegyik történelmi korszakban 3 jelentős személy kerül megemlítésre, róluk írom le a legfontosabb információkat, hatásukat koruk társadalmára.
 
 Emellett található az oldalon egy tudásfelmérő kvíz, valamint egy regisztrációs felület, ahol a felhasználók adataik megadásával segíthetnek hozzájárulni egy esetleges folyóirat indításához, célközönségi statisztikát kínálva.
